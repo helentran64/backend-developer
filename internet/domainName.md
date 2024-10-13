@@ -1,4 +1,4 @@
-# Domain Name
+## Domain Name
 
 - Domain names are a key part of the Internet infrastructure. They provide a human-readable address for any web server available on the Internet.
 - Any Internet-connected computer can be reached through a public IP Address, either an IPv4 address (e.g. `192.0.2.172`) or an IPv6 address (e.g., `2001:db8:8b73:0000:0000:8a2e:0370:1337`).
