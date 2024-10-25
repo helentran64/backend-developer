@@ -24,3 +24,7 @@
   - Verification: The server determines that the person should have access. That could involve checking the password against the username, for example.
   - Tokens: The server communicates with the authentication device, like a ring, key, phone, or similar device. After verification, the server issues a token and passes it to the user.
   - Storage: The token sits within the user's browser while work continues.
+
+## Cookie-Based Authentication
+
+- Cookie-based authentication is a method of maintaining user sessions in web applications. When a user logs in, the server creates a session and sends a unique identifier (session ID) to the client as a cookie. This cookie is then sent with every subsequent request, allowing the server to identify and authenticate the user. The actual session data is typically stored on the server, with the cookie merely serving as a key to access this data. This approach is stateful on the server side and works well for traditional web applications. It’s relatively simple to implement and is natively supported by browsers
