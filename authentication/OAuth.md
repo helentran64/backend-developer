@@ -15,4 +15,12 @@
 
 ## OAuth Tokens
 
-- Access tokens are the token the client uses to access the Resource Server (API). They’re meant to be short-lived. Think of them in hours and minutes, not days and month. You don’t need a confidential client to get an access token. You can get access tokens with public clients. They’re designed to optimize for internet scale problems. Because these tokens can be short lived and scale out, they can’t be revoked, you just have to wait for them to time out.
+- OAuth tokens allow users to verify their identity, and in return receive a unique access token
+- Access tokens are the token the client uses to access the Resource Server (API). They’re meant to be short-lived. Think of them in hours and minutes, not days and month.
+- During the life of the token, users then access the website or app that the token has been issued for, rather than having to re-enter credentials each time they go back to the same webpage, app, or any resource protected with that same token.
+- Because these tokens can be short lived and scale out, they can’t be revoked, you just have to wait for them to time out.
+- Steps on getting a token:
+  - Request: The person asks for access to a server or protected resource. That could involve a login with a password, for example.
+  - Verification: The server determines that the person should have access. That could involve checking the password against the username, for example.
+  - Tokens: The server communicates with the authentication device, like a ring, key, phone, or similar device. After verification, the server issues a token and passes it to the user.
+  - Storage: The token sits within the user's browser while work continues.
