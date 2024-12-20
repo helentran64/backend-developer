@@ -1,6 +1,6 @@
 - Composition:
 - Implements a “has-a” relationship between objects
-  - For example, one object is composed \*\*\*\*of one or more instances of another class
+  - For example, one object is composed of one or more instances of another class
 - Is achieved by using instance variables of other objects. For example, a person who has a Job is implemented like below
   ```tsx
   class Job {
@@ -81,5 +81,5 @@
   const penguin = new Bird(new CannotFly());
   penguin.performFly(); // Outputs: "I cannot fly."
   ```
-- There is no access control in inheritance whereas access can be restricted in composition. We expose all the superclass methods to the other classes having access to subclass. So if a new method is introduced or there are security holes in the superclass, subclass becomes vulnerable. Since in composition we choose which methods to use, it’s more secure than inheritance.
+- There is no access control in inheritance whereas access can be restricted in composition. We expose all the superclass methods to the other classes having access to subclass. So if a new method is introduced or there are security holes in the superclass, subclass becomes vulnerable. Since in composition we choose which methods to use, it’s more secure than inheritance
 - One more benefit of composition over inheritance is testing scope. Unit testing is easy in composition because we know what all methods we are using from another class. We can mock it up for testing whereas in inheritance we depend heavily on superclass and don’t know what all methods of superclass will be used. So we will have to test all the methods of the superclass. This is extra work and we need to do it unnecessarily because of inheritance
